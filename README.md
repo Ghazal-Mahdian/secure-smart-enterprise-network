@@ -115,10 +115,6 @@ I traced the guest access to missing or misordered deny rules and added Guest �
 - ACL order matters: a deny placed after a broader permit never takes effect, which is the root cause of the guest-to-Corporate gap (§4).
 - Encrypting only Corp-to-Corp traffic keeps the tunnel's scope narrow (§2).
 
-**Suggested reflections — for your review before publishing (not from your report):**
-- Re-testing each "must fail" rule after a fix, and capturing the failing ping, would have exposed the ordering problem before submission.
-- When routing happens on a Layer 3 switch, filtering on the edge firewall cannot control traffic between local VLANs (§4).
-- Giving the ISP router static routes to private corporate subnets makes pings succeed with or without the tunnel. The IPsec encaps/decaps counters, not reachability alone, are what show that traffic was encrypted.
 
 ## Reviewing this repository
 
