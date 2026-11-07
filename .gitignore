@@ -1,0 +1,23 @@
+# OS and editor files
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Packet Tracer working files and backups
+*.pkt.bak
+*.pka.bak
+*~
+
+# Local working material that should not be published
+originals/
+private/
+recordings/
+*.mp4
+*.mov
+*.m4a
+*.zip
